@@ -1,0 +1,251 @@
+/***************************************** Header starts ********************************/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+
+}
+
+/* custom scroll bar */
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+::selection {
+  background: rgb(0, 123, 255, 0.3);
+}
+
+.content {
+  max-width: 1250px;
+  margin: auto;
+  padding: 0 30px;
+}
+
+.navbarzz {
+  position: fixed;
+  background-color: white;
+  width: 100%;
+  z-index: 3;
+  color: #3196CA;
+  height: 80px;
+  transition: all 0.3s ease;
+}
+
+.navbarzz.sticky {
+  background: #ffffff;
+  height: 80px;
+  color: #3196CA;
+  padding: 0px 0px 20px 0px;
+  box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.1);
+}
+
+.navbarzz .content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.fa-bars {
+  color: black;
+}
+
+.navbarzz .menu-list {
+  display: inline-flex;
+}
+
+.menu-list li {
+  list-style: none;
+}
+
+.menu-list li a {
+  color: #3196CA;
+  font-size: 18px;
+  font-weight: 500;
+  margin-left: 25px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.menu-list li a:hover {
+  color: #8fc3dd;
+  text-decoration: underline 4px;
+  transition: all 0.3s ease;
+}
+
+/* li drop down  */
+
+.dropdown ul {
+  width: 180px;
+  position: absolute;
+  background: #ffffff;
+  top: 70px;
+  z-index: -1;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.dropdown:hover>ul {
+  top: 35px;
+  opacity: 1;
+  visibility: visible;
+  transition: all 0.3s ease;
+}
+
+.dropdown ul li a {
+  display: block;
+  width: 100%;
+  line-height: 50px;
+  border-radius: 50px;
+}
+
+.socials {
+  display: none;
+}
+
+.icon {
+  color: #fff;
+  font-size: 20px;
+  cursor: pointer;
+  display: none;
+}
+
+.menu-list .cancel-btn {
+  position: absolute;
+  right: 30px;
+  top: 20px;
+}
+
+.fa-times {
+  color: black;
+}
+
+@media (max-width: 1230px) {
+  .content {
+    padding: 0 60px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .content {
+    padding: 0 40px;
+  }
+}
+
+
+/******************************************page starts *******************************/
+
+/* banner starts */
+.carousel-inner> .carousel-item{
+height: 100vh;
+}
+.missionslider {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: linear-gradient(180deg, rgba(27, 31, 37, 0) 25%, #ffffff 97%), url(https://img.freepik.com/free-vector/5g-networking-technology-background-with-blue-digital-line_53876-119505.jpg) !important;
+  background-position: center;
+  background-size: cover;
+}
+
+.missionslider>.heads {
+  justify-content: center;
+  align-items: center;
+}
+
+.heads>.head1 {
+  color: black;
+  -webkit-text-fill-color: white;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: black;
+  text-align: center;
+  font-size: 44px;
+  margin: 10px;
+  text-shadow: 2px 2px 2px rgb(102, 101, 101);
+  font-weight: bold;
+}
+
+.heads>p {
+  font-weight: 500;
+  color: rgb(0, 0, 0) !important;
+  text-align: center;
+}
+
+/* banner ends  */
+
+.text {
+  margin: 50px 5px;
+  font-size: 24px;
+  color: gray;
+}
+
+.text>p {
+  text-align: center;
+}
+
+.sub-head {
+  font-size: 50px;
+  text-transform: uppercase;
+  color: rgb(83, 81, 81);
+}
+
+.sub-head:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.butn {
+  border:#1B2E46 solid 2px;
+  background-color: #1B2E46;
+  border-radius: 100px;
+  width: 230px;
+  color: white;
+  justify-content: center;
+  padding: 10px 0px;
+  transition: width 1s;
+  margin-bottom: 50px;
+  margin-top: 10px;
+
+}
+
+.butn:hover {
+  background-color: #2a4462;
+  color: white;
+  outline: none;
+
+}
+
+.butn:active {
+  background-color: #3196CA;
+  color: rgb(209, 209, 209);
+  text-decoration: underline;
+}
+
+.comp-head {
+  flex-direction: column;
+  border: 1px gray solid;
+  background-color: rgb(218, 218, 218);
+  padding: 20px 30px;
+}
+
+.comp-head>h1 {
+  text-transform: uppercase;
+}
+.heading{
+  font-size: large;
+  text-align: center;
+  font-weight: bold;
+  font-size: 45px;
+}

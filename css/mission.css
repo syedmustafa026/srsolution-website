@@ -1,0 +1,45 @@
+
+/* banner starts */
+
+.homeslider {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: linear-gradient(180deg,rgba(27,31,37,0) 25%,#7a7979 97%),url(https://i.pinimg.com/736x/3d/0a/8a/3d0a8afeee28bbeb7d704b335efd34ed.jpg);
+    background-position: center;
+    background-size: cover;
+  }
+  
+  .homeslider>.heads {
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .heads>.head1 {
+    color: black;
+    -webkit-text-fill-color: white;
+    /* Will override color (regardless of order) */
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+    text-align: center;
+    font-size: 44px;
+    text-shadow: 2px 2px 2px rgb(102, 101, 101);
+    font-weight: bold;
+  }
+  
+  .heads>p {
+      font-weight: 500;
+    color: rgb(0, 0, 0);
+    text-align:center;
+  }
+  
+  /* banner ends  */
+.sop-img{
+    display: flex;
+ align-items: center;
+}
+.sop-img >img{
+    width: 150px;
+    height: 150px;
+}

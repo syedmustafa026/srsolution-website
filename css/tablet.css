@@ -1,0 +1,87 @@
+
+@media (max-width: 900px) {
+  .content {
+    padding: 0 30px;
+  }
+}
+
+@media (max-width: 868px) {
+
+  .carousel-inner> .carousel-item{
+    height: 100%;
+    }
+  body.disabled {
+    overflow: hidden;
+  }
+  .icon {
+    display: block;
+  }
+  .dropdown>ul{
+    display: none;
+  }
+  .icon.hide {
+    display: none;
+  }
+  .logoimg> .logo{
+    z-index: 20;
+  }
+  .navbarzz .menu-list {
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    max-width: 400px;
+    left: -100%;
+    top: 0px;
+    display: block;
+    padding: 40px 0;
+    text-align: center;
+    background: rgb(255, 255, 255);
+    transition: all 0.3s ease;
+  }
+  .navbarzz.show .menu-list {
+    left: 0%;
+  }
+
+  .navbarzz .menu-list li {
+    margin-top: 45px;
+  }
+  .navbarzz .menu-list li a {
+    font-size: 23px;
+    margin-left: -100%;
+    transition: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  }
+  .navbarzz.show .menu-list li a {
+    margin-left: 0px;
+  }
+  .sub-head{
+    font-size: 32px;
+  }
+  .heads>.head1 {
+    color: black;
+    -webkit-text-fill-color: white;
+    /* Will override color (regardless of order) */
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+    text-align: center;
+    font-size: 52px;
+    text-shadow: 2px 2px 2px rgb(102, 101, 101);
+    font-weight: bold;
+  }
+  .socials{
+    display: block;
+    position: absolute;
+    bottom: 10%;
+    left: 42.5%;
+}
+  .heads>p {
+    color: white;
+    text-align: center;
+    
+  }
+  .sop-img >img{
+    margin-left: 0px ;
+    width: 100px;
+    height: 100px;
+  }
+}
+
